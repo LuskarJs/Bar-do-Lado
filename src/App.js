@@ -1,4 +1,5 @@
 import './App.css';
+import "./"
 import principalimg from "./Assests/bg-home.png"
 import bg from "./Assests/bg.png";
 import pin from "./Assests/alfinete.png";

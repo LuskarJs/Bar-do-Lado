@@ -1,4 +1,7 @@
 import "./faq.css";
+import brilho from "../Assests/brilho.png";
+import seta from "../Assests/seta.png";
+import Modal from "./modal";
 import perguntasRespostas from "./datafaq";
 
 function FAQ() {
@@ -6,6 +9,11 @@ function FAQ() {
     return (
 
         <section className="faq-container">
+            <div className="bg-img">
+                <img src={brilho} alt="brilho icone" />
+                <img src={brilho} alt="brilho icone" />
+                <img src={seta} alt="seta icone" />
+            </div>
             <div className="title-faq">
                 <h2>Perguntas Frequentes</h2>
             </div>
@@ -17,6 +25,14 @@ function FAQ() {
                 </li>
                 ))}
             </ul>
+            <div className="btn">
+                <button onClick={() => Modal}>
+                    Fazer Pergunta
+                </button>
+                <button>
+                    Ver Todas as Perguntas
+                </button>
+            </div>
         </section>
     )
 }

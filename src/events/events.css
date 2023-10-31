@@ -6,6 +6,7 @@
     justify-content: space-around;
     width: 100%;
     height: 380px;
+    position: relative;
 }
 
 .EventPage .time-fun,
@@ -28,6 +29,7 @@
     gap: 3rem;
     justify-content: center;
     background-color: var(--cor-cinza);
+    background-image: linear-gradient(var(--cor-cinza), white);
 }
 
 .EventPage .time-fun .funcionamento-hora {
@@ -38,6 +40,14 @@
     flex-direction: column;
     align-items: center;
     gap: .5rem;
+}
+
+.EventPage .time-fun .funcionamento-hora button {
+    border: none;
+    background: transparent;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .EventPage .time-fun .funcionamento-hora li {
@@ -65,6 +75,37 @@
     font-family: "Koulen";
 }
 
+.EventPage .time-fun .title-funcionamento h2 {
+    letter-spacing: 2px;
+}
+
+.EventPage .time-fun .title-funcionamento .content-funcionamento{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    border-radius: var(--border-radius);
+    width: 65%;
+    padding: .5rem;
+    height: 100%;
+    color: white;
+    letter-spacing: 2px;
+    background-color: var(--cor-cinza);
+    background-image: linear-gradient(grey 40%, transparent);
+}
+
+.EventPage .time-fun .title-funcionamento .content-funcionamento .close,
+.EventPage .time-fun .title-funcionamento .content-funcionamento .open {
+    background-color: green;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.EventPage .time-fun .title-funcionamento .content-funcionamento .close {
+    background-color: crimson;
+}
+
 .EventPage .event-content::after {
     position: absolute;
     content: "";
@@ -88,7 +129,8 @@
     display: flex;
     width: 100%;
     align-items: center;
-    font-family: "Koulen";
+    font-size: .8rem;
+    font-family: "Poppins";
     border-bottom: 1px solid grey;
     color: white;
 }
@@ -142,4 +184,60 @@
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+}
+
+.section-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 1rem 0;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+}
+
+.section-event .Card-event {
+    width: 500px;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.section-event .Card-event .option-event{
+    display: flex;
+    margin:1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-event .Card-event .option-event .timers {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.section-event .Card-event .text-event {
+    margin: 1rem;
+    font-family: 'Poppins';
+}
+
+.section-event .Card-event .text-event p {
+    overflow-y: scroll;
+    height: 50px;
+}
+
+.section-event .Card-event .img-event figure {
+    width: 100%;
+    height: 200px;
+}
+
+.section-event .Card-event .img-event figure img {
+    width: 100%;
+    height: 100%;
 }
