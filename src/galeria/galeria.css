@@ -11,6 +11,17 @@
     overflow: hidden;
 }
 
+.section-galeria .button-all button {
+    border: none;
+    padding: .4rem 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--cor-laranja);
+    text-transform: uppercase;
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.2rem;
+}
+
 .section-galeria .bg-galeria img {
     position: absolute;
 }
@@ -45,13 +56,19 @@
     align-items: center;
     gap: 0 2rem;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     z-index: 1!important;
 }
 
 .section-galeria .RedeSocias img {
     width: 30px;
+    transition: all .35s ease;
     cursor: pointer;
+}
+
+.section-galeria .RedeSocias li:hover img {
+    transform: scale(.8);
+    transition: all .35s ease;
 }
 
 .section-galeria .content-galeria {

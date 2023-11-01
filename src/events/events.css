@@ -90,20 +90,35 @@
     height: 100%;
     color: white;
     letter-spacing: 2px;
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-preta);
     background-image: linear-gradient(grey 40%, transparent);
+}
+
+@keyframes Pulsar {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: .6;
+    }
+    100% {
+        scale: 1;
+    }
 }
 
 .EventPage .time-fun .title-funcionamento .content-funcionamento .close,
 .EventPage .time-fun .title-funcionamento .content-funcionamento .open {
-    background-color: green;
+    background-image: radial-gradient(green 40%, transparent);
+    box-shadow: 0px 0px 10px green;
     border-radius: 50%;
     width: 20px;
     height: 20px;
 }
 
 .EventPage .time-fun .title-funcionamento .content-funcionamento .close {
-    background-color: crimson;
+    background-image: radial-gradient(crimson 40%, transparent );
+    box-shadow: 0px 0px 10px crimson;
+    animation: Pulsar 1.5s ease infinite;
 }
 
 .EventPage .event-content::after {

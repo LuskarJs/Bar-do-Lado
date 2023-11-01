@@ -5,6 +5,9 @@ import SecondPage from './destaques/secondPage';
 import ThirdPage from './galeria/thirdPage';
 import EventPage from './events/eventsPage';
 import FAQ from './FAQ/faq';
+import EquipePage from './Equipe/Equipe';
+import Footer from './Footer/Footer';
+import NewsLetters from './newsLetters/newsletter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +17,9 @@ root.render(
     <ThirdPage />
     <EventPage/>
     < FAQ />
+    < EquipePage />
+    < NewsLetters/>
+    <Footer/>
   </React.StrictMode>
 );
 

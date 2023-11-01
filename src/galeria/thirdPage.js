@@ -24,6 +24,9 @@ import "./galeria.css"
                     </li>
                 ))}
             </ul>
+            <div className="button-all">
+                <button>Ver Galeria</button>
+            </div>
             <div className="RedeSocias">
                 <li>
                     <img src={instagram} alt="icone do instagram" />

@@ -1,10 +1,20 @@
 import "./faq.css";
+import React, { useState } from "react";
 import brilho from "../Assests/brilho.png";
 import seta from "../Assests/seta.png";
 import Modal from "./modal";
 import perguntasRespostas from "./datafaq";
 
 function FAQ() {
+    const [modalAberto, setModalAberto] = useState(false);
+
+    const abrirModal = () => {
+      setModalAberto(true);
+    };
+  
+    const fecharModal = () => {
+      setModalAberto(false);
+    };
 
     return (
 
@@ -26,13 +36,15 @@ function FAQ() {
                 ))}
             </ul>
             <div className="btn">
-                <button onClick={() => Modal}>
-                    Fazer Pergunta
+                <button onClick={abrirModal}>
+                Fazer Pergunta
                 </button>
                 <button>
-                    Ver Todas as Perguntas
+                Ver Todas as Perguntas
                 </button>
             </div>
+            {modalAberto && <Modal fecharModal={fecharModal} />}
+
         </section>
     )
 }

@@ -81,6 +81,7 @@
     transition: background-color .35s ease;
 }
 
+.section-galeria .button-all button:hover,
 .destaque-section .content-section .btn button:hover,
 .Home .content-home .btn button:Hover {
     background-color: #e78630;
