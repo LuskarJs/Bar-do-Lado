@@ -3,7 +3,7 @@ import "./equipe.css"
 function EquipePage() {
 
     return (
-        <section className="section-equipe">
+        <section className="section-equipe" id="equipe">
             <div className="title-equipe">
                 <h2>Equipe do Bar do Lado</h2>
             </div>

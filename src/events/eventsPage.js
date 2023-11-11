@@ -27,7 +27,7 @@ function EventPage() {
   };
 
   return (
-    <section className="EventPage">
+    <section className="EventPage" id="eventos">
       <div className="event-content">
         <div className="title-event">
           <h2>Eventos</h2>

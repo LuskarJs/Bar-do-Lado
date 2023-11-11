@@ -3,6 +3,7 @@ import './allmenu.css';
 import { produtos } from './cardapioData';
 
 function CardapioCompleto() {
+
   const [categorias, setCategorias] = useState([]);
   const [subcategoriasPorCategoria, setSubcategoriasPorCategoria] = useState({});
 
@@ -56,6 +57,7 @@ function CardapioCompleto() {
               </div>
               <div className="info-produtos">
                 <h3>{produto.nome}</h3>
+                <h4>{produto.subcategoria}</h4>
                 <p><span>R$:</span>{produto.preco}</p>
               </div>
               <div className="btns">

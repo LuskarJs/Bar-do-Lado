@@ -18,7 +18,7 @@ function FAQ() {
 
     return (
 
-        <section className="faq-container">
+        <section className="faq-container" id="faq">
             <div className="bg-img">
                 <img src={brilho} alt="brilho icone" />
                 <img src={brilho} alt="brilho icone" />

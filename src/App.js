@@ -3,10 +3,14 @@ import "./"
 import principalimg from "./Assests/bg-home.png"
 import bg from "./Assests/bg.png";
 import pin from "./Assests/alfinete.png";
+import { Link } from "react-router-dom";
+
 
 function App() {
+
+
   return (
-    <section className="Home">
+    <section className="Home" id="home">
             <div className='content-img'>
               <figure>
                 <img src='https://www.obomdeviajar.com.br/wp-content/uploads/bar_teto_solar.jpg' alt='Pessoas brindando em um bar universitario' />
@@ -33,7 +37,9 @@ function App() {
               <p>Rua Travessa Carlos Antonio <span>N: 184</span>, CEP<span>2445-5745</span></p>
             </div>
           <div className='btn'>
+          <Link to="/Cardapio">
               <button> Ver Cardapio </button>
+          </Link>
               <button> Fazer Parte</button>
           </div>
       </div>

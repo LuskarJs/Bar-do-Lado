@@ -1,8 +1,8 @@
 import cerveja from "../Assests/cerveja.png";
 import latinhaRefrigerante from "../Assests/coca.png";
-import batataFrita from "../Assests/batata-frita.png";
-import hamburguer from "../Assests/hamburguer.png";
-import petiscos from "../Assests/espeto-churrasco.png";
+import batataFrita from "../Assests/batatas-fritas-crocantes-com-ketchup-e-maionese.jpg";
+import hamburguer from "../Assests/fabio-alves-AgqZPNcHR6w-unsplash 1.png";
+import petiscos from "../Assests/espeto-de-carne-com-legumes-isolados-no-fundo-branco-ai-generative.jpg";
 
 export const produtos = [
   {
@@ -30,7 +30,23 @@ export const produtos = [
     estoque: 200,
   },
   {
-    nome: "Latinha de Refrigerante",
+    nome: "H2O",
+    categoria: "Bebidas",
+    subcategoria: "Não Alcoólico",
+    image: "",
+    preco: 1.99,
+    estoque: 200,
+  },
+  {
+    nome: "H2O",
+    categoria: "Bebidas",
+    subcategoria: "Não Alcoólico",
+    image: "",
+    preco: 1.99,
+    estoque: 200,
+  },
+  {
+    nome: "Coca cola 300ml Coca cola 300ml",
     categoria: "Bebidas",
     subcategoria: "Não Alcoólico",
     image: latinhaRefrigerante,

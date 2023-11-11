@@ -7,7 +7,7 @@ import "./galeria.css"
 
  function ThirdPage() {
     return (
-        <section className="section-galeria">
+        <section className="section-galeria" id="galeria">
             <div className="bg-galeria">
                 <img src={Point} alt="point" />
                 <img src={Point} alt="point" />
