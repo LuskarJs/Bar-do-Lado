@@ -7,12 +7,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Create from './LogineCreate/Create';
 import CardapioCompleto from "./Cardapio/CardapioCompleto";
 import Login from './LogineCreate/login';
+import Profile from './profile/pageprofile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <Router>
         <MenuBar />
+        <Profile />
+
       <Routes>
         <Route path="/" element={<HomeAll />} />
         <Route path="/Criar-Conta" element={<Create />} />

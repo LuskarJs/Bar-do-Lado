@@ -116,6 +116,7 @@
 
     .menu-bar.show {
         width: 260px;
+        padding: .4rem 0!important;
         transition: all .35s ease;
         height: 94vh;
         border-radius: var(--border-radius);
@@ -132,6 +133,7 @@
 
     .menu-bar .Menu-icon figure {
         width: 20px;
+        cursor: pointer;
         height: 20px;
     }
 
@@ -159,12 +161,24 @@
         transition: all 1s ease;
     }
 
+    .menu-bar.show nav ul li {
+        padding-left: 0!important;
+    }
+
+    .menu-bar.show nav ul li {
+        background-image: none;
+    }
+
     .menu-bar.show nav ul li a{ 
         font-size: 1rem;
         color: black!important;
     }
 
     .visitante-content {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         margin-top: 2rem;
     }
 

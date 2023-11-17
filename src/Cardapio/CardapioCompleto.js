@@ -24,12 +24,7 @@ function CardapioCompleto() {
   return (
     <section className='section-produtos'>
       <div className="sidar-content">
-        <div className="search-bar">
-          <form>
-            <input type="text" placeholder="Cervejas" />
-            <button type="submit">Pesquisar</button>
-          </form>
-        </div>
+        
         <ul className='lista-categorias'>
           {categorias.map((categoria, index) => (
             <li key={index}>
@@ -44,6 +39,12 @@ function CardapioCompleto() {
         </ul>
       </div>
       <div className="Todos-produtos">
+      <div className="search-bar">
+          <form>
+            <input type="text" placeholder="Cervejas" />
+            <button type="submit">Pesquisar</button>
+          </form>
+        </div>
         <div className='resultado'>
           <p>Resultados para:<span>Bebidas</span></p>
         </div>

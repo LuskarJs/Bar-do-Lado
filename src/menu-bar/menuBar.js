@@ -18,8 +18,6 @@ function MenuBar() {
 
     if(showMenu === true ) {
       const menubar = document.getElementsByClassName('menu-bar');
-      
-
       if(showMenu === true) {
         menubar[0].classList.toggle("show");
       }

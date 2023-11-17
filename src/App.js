@@ -40,7 +40,9 @@ function App() {
           <Link to="/Cardapio">
               <button> Ver Cardapio </button>
           </Link>
-              <button> Fazer Parte</button>
+          <Link to="/Criar-Conta">
+              <button>Fazer Parte</button>
+          </Link>
           </div>
       </div>
     </section>
