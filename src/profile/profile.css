@@ -1,0 +1,526 @@
+.section-profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Assests/bg.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.section-profile .profile-dash {
+    display: flex;
+    height: 100%;
+    padding-top: 2.4rem;
+    width: 97%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+}
+
+.section-profile .profile-dash .dash-section {
+    background-color: var(--cor-cinza);
+    padding: 0 1rem;
+    box-shadow: 5px 2px 10px rgba(32, 32, 32, 0.582);
+    width: 100%;
+    border-radius: var(--border-radius);
+    padding-top: .5rem;
+    height: 55%;
+}
+
+.section-profile .profile-dash .dash-section .scroll-options-dash,
+.section-profile .profile-dash .dash-section .scroll-options {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 1rem 2rem;
+    color: grey;
+    list-style: none;
+}
+
+.section-profile .profile-dash .dash-section .flex-profile {
+    background-color: white;
+    height: 85%;
+    border-radius: 0px 0px 10px 10px;
+    padding: .2rem 1rem;
+}
+
+.section-profile .profile-dash .dash-section .scroll-options-dash li,
+.section-profile .profile-dash .dash-section .scroll-options li {
+    padding: .5rem .4rem;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    text-transform: none;
+}
+
+.section-profile .profile-dash .dash-section .scroll-options-dash {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.61);
+}
+
+.section-profile .profile-dash .dash-section .scroll-options-dash li {
+    color: var(--cor-preta);
+    font-family: "Koulen";
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.section-profile .profile-dash .dash-section .scroll-options-dash li.show {
+    background-color: var(--cor-preta);
+    transition: all .35s ease;
+    color: white;
+}
+
+.section-profile .profile-dash .dash-section .scroll-options li.active {
+    background-color: white;
+    transition: all .35s ease;
+}
+
+.section-profile .profile-dash .profile-info {
+    padding-top: 2rem;
+    display: flex;
+    font-family: "Poppins",sans-serif;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.section-profile .profile-dash .profile-info h3 {
+    font-family: 'Koulen', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    background-color: var(--cor-preta);
+    padding: .4rem 1rem;
+    color: var(--cor-laranja);
+    border-radius: var(--border-radius);
+}
+
+.section-profile .profile-dash .profile-info h4 {
+    background-color: var(--cor-laranja);
+    color: white;
+    letter-spacing: 2px;
+    padding: .4rem 1rem;
+    width: 100%;
+    border-radius: 35px;
+}
+
+.section-profile .profile-dash .profile-info h4 span {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.section-profile .profile-dash .profile-info p {
+    background-color: var(--cor-preta);
+    color: var(--cor-laranja);
+    padding: 1rem;
+    max-width: 200px;
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+}
+
+.section-profile .proffile-settings {
+    margin-left: 2rem;
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-profile .proffile-settings .setting-options {
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--cor-cinza);
+    box-shadow: 1px 5px 10px rgba(32, 32, 32, 0.582);
+    padding: 2rem 0;
+    height: 53.6%;
+    width: 100%;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-profile .proffile-settings .setting-options li {
+    cursor: pointer;
+    width: 90%;
+    display: block;
+    padding-left: 1.2rem;
+}
+
+@keyframes Width {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.section-profile .proffile-settings .setting-options li.mark {
+    background-color: var(--cor-preta);
+    padding: 1rem;
+    width: 100%;
+    animation: Width .20s ease;
+    color: var(--cor-laranja);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.section-profile .proffile-settings .profile-img {
+    margin: 1rem;
+    padding-top: 3rem;
+}
+
+.section-profile .proffile-settings .profile-img figure { 
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.section-profile .proffile-settings .profile-img figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-ajuda,
+.settings-options-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--cor-cinza);
+    width: 100%;
+    box-shadow: 1px 5px 10px rgba(32, 32, 32, 0.582);
+    height: 55%;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+ .btns {
+    margin: 1rem 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btns button:last-child,
+.btns button:first-child {
+    background-color: var(--cor-laranja);
+    padding: .9rem 2rem;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+ .btns button:last-child {
+    background-color: transparent!important;
+    color: black;
+}
+
+.dash-seguranca,
+.settings-options-notification .dash-notification {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: .5rem;
+    justify-content: center;
+}
+
+.settings-options-notification .dash-notification .title-notification {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+}
+
+.settings-options-notification .dash-notification .options-notification {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.settings-options-notification .options-principal {
+    list-style: none;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.settings-options-notification .options-notification li,
+.settings-options-notification .options-principal li {
+    width: 100%;
+    display: flex;
+}
+
+.settings-options-notification .options-notification li {
+    border: 1px solid var(--cor-preta);
+    font-family: "Poppins",sans-serif;
+    padding: .4rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    width: 24%!important;
+    border-radius: var(--border-radius);
+}
+
+.settings-options-notification .options-notification li input[type=checkbox] {
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.settings-options-notification .options-notification li input[type=checkbox]::before {
+    background-color: grey;
+    width: 20px;
+    display: block;
+    top: -.5rem;
+    left: -.7rem;
+    border-radius: 50%;
+    height: 20px;
+    transition: all .35s ease;
+    position: absolute;
+    content: "";
+}
+
+.settings-options-notification .options-notification li input[type=checkbox]:checked:after {
+    background-color: var(--cor-laranja);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    top: -.39rem;
+    transition: all .35s ease;
+    left: -.49rem;
+}
+
+.settings-options-notification .options-notification li:last-child input[type=checkbox]:checked:after {
+    left: -.52rem!important;
+}
+
+.settings-options-notification .options-notification li htmlforlabel {
+    cursor: pointer;
+}
+
+.settings-options-notification .options-notification li figure {
+    width: 30px;
+    height: 30px;
+}
+
+.settings-options-notification .options-notification li figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.settings-options-notification .options-principal li input[type=range] {
+    -webkit-appearance: none;
+    width: 60px;
+    border-radius: var(--border-radius);
+    appearance: none;
+    cursor: pointer;
+    padding: .4rem;
+    transition: all .35s ease;
+}
+
+.settings-options-notification .options-principal li input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: var(--cor-preta);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.settings-options-notification .options-principal li p {
+    padding-left: 10px;
+}
+
+.section-seguranca {
+    width: 100%;
+    height: 55%;
+    box-shadow: 1px 5px 10px rgba(32, 32, 32, 0.582);
+    border-radius: var(--border-radius);
+    background-color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dash-seguranca {
+    width: 95%;
+}
+
+.dash-seguranca .options-seguranca {
+    height: 100%;
+    gap: 1rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.dash-seguranca .options-seguranca li {
+    display: flex;
+    font-family: "Poppins";
+    color: var(--cor-preta);
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid grey ;
+    padding: .4rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dash-seguranca .options-seguranca li input {
+    opacity: 0;
+    visibility: none;
+}
+
+.dash-seguranca .options-seguranca li:hover {
+    background-color: rgba(20, 20, 20, 0.836);
+    color: white;
+    cursor: pointer;
+}
+
+.dash-seguranca .options-seguranca li:last-child {
+    color: crimson;
+}
+
+.dash-seguranca .options-seguranca li figure {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.dash-seguranca .options-seguranca li figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-ajuda {
+    font-family: "Poppins", sans-serif;
+    justify-content: flex-start;
+}
+
+.section-ajuda ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    list-style: none;
+}
+
+.section-ajuda ul li {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.section-ajuda ul li figure {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.section-ajuda ul li figure img {
+    height: 100%;
+    width: 100%;
+}
+
+.section-ajuda .title-ajuda {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.section-profileEdit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--cor-cinza);
+    box-shadow: 1px 5px 10px rgba(32, 32, 32, 0.582);
+    padding: 1rem;
+    font-family: "Poppins",sans-serif;
+    height: 55%;
+    border-radius: var(--border-radius);
+    
+    width: 100%;
+}
+
+.section-profileEdit .title-editProfile {
+    margin-bottom: 1rem;
+}
+
+.section-profileEdit ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 1rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-profileEdit ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid grey;
+    padding: .6rem 1rem;
+    border-radius: var(--border-radius);
+    justify-content: flex-start;
+}
+
+.section-profileEdit ul li:hover {
+    background-color: grey;
+    color: white;
+    transition: all .35s ease;
+}
+
+.section-profileEdit ul li figure {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.section-profileEdit ul li figure img {
+    height: 100%;
+    width: 100%;
+}

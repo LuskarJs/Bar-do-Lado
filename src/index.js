@@ -1,20 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import SecondPage from './destaques/secondPage';
-import ThirdPage from './galeria/thirdPage';
-import EventPage from './events/eventsPage';
-import FAQ from './FAQ/faq';
+import Footer from './Footer/Footer';
+import HomeAll from './homepage';
+import MenuBar from './menu-bar/menuBar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Create from './LogineCreate/Create';
+import CardapioCompleto from "./Cardapio/CardapioCompleto";
+import Login from './LogineCreate/login';
+import Profile from './profile/pageprofile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <SecondPage />
-    <ThirdPage />
-    <EventPage/>
-    < FAQ />
+     <Router>
+        <MenuBar />
+        <Profile />
+
+      <Routes>
+        <Route path="/" element={<HomeAll />} />
+        <Route path="/Criar-Conta" element={<Create />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path='/Cardapio' element={<CardapioCompleto />} />
+      </Routes>
+        <Footer />
+    </Router>
   </React.StrictMode>
 );
 

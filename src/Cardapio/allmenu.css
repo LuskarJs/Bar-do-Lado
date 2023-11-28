@@ -1,0 +1,263 @@
+.section-produtos {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: var(--cor-preta);
+    background-image: radial-gradient( rgb(43, 42, 42),var(--cor-preta));
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.section-produtos .sidar-content {
+    display: flex;
+    padding-top: 4rem;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.section-produtos .sidar-content .lista-categorias {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    list-style: none;
+    gap: 1rem 0;
+    padding-left: 2rem;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.section-produtos .sidar-content .lista-categorias li ul {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-produtos .sidar-content .lista-categorias li ul li {
+    text-transform: uppercase;
+    transition: all .35s ease;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+}
+
+.section-produtos .sidar-content .lista-categorias li ul li:Hover {
+    padding-left: 10px;
+    transition: all .35s ease;
+
+}
+
+.section-produtos .sidar-content .lista-categorias li h2 {
+    text-transform: uppercase;
+    font-family: "Koulen";
+    letter-spacing: 2px;
+}
+
+.section-profile .profile-dash .dash-section .search-bar,
+.section-produtos .search-bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.575);
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.section-profile .profile-dash .dash-section .search-bar input,
+.section-produtos .search-bar input {
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.section-profile .profile-dash .dash-section .search-bar button,
+.section-produtos .search-bar button {
+    background-color: var(--cor-laranja);
+    padding: .4rem 1rem;
+    color: white;
+    transition: all .35s ease;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    border: none;
+}
+
+.section-profile .profile-dash .dash-section .search-bar button:hover,
+.section-produtos .search-bar button:hover {
+    box-shadow: 0px 0px 10px var(--cor-laranja);
+    transition: all .35s ease;
+}
+
+.section-produtos::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient( transparent,rgba(0, 0, 0, 0.781) );
+}
+
+.section-produtos .Todos-produtos {
+    border-left: 1px solid rgba(128, 128, 128, 0.808);
+    padding-top: 4rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-produtos .Todos-produtos .resultado {
+    margin-left: 1rem;
+    color: white;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: .7rem;
+}
+
+.section-produtos .Todos-produtos .resultado span {
+    margin-left: 10px;
+}
+
+.section-produtos .Todos-produtos .list-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100vh;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 14rem;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 300px;
+    transition: all .35s ease;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .btns {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin: 1rem;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .btns button:first-child{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .btns button:first-child span {
+    transition: all .35s ease;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .btns button:first-child span:Hover {
+    background-color: grey;
+    text-align: center;
+    color: white;
+    transition: all .35s ease;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .btns button:last-child{
+    background-color: var(--cor-preta);
+    color: var(--cor-laranja);
+    border: none;
+    padding: .5rem 1rem;
+    transition: all .35s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .btns button:last-child:hover {
+    transition: all .35s ease;
+    box-shadow: 0px 0px 10px var(--cor-preta);
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .info-produtos {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    margin-left: 3rem;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .info-produtos h3 {
+    text-transform: uppercase;
+    width: 80%;
+    text-align: left;
+    font-size: .9rem;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .info-produtos h4 {
+    color: grey;
+    font-size: .8rem;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .info-produtos p span {
+    margin-right: 5px;
+    padding-top: 10px;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos:hover {
+    transform: translateY(-10px);
+    transition: all .35s ease;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .img-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .img-produtos figure {
+    width: 90%;
+    height: 140px; 
+    padding: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-laranja);
+    border-radius: var(--border-radius);
+}
+
+.section-produtos .Todos-produtos .list-produtos .Card-produtos .img-produtos figure img {
+    object-fit: contain;
+    width: 100%;
+    object-position: center;
+    height: 100%;
+    border-radius: var(--border-radius);
+}

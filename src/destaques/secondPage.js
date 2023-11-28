@@ -1,11 +1,12 @@
 import CardDestaque from "./dataCard";
 import "./secondPageSt.css";
+import {Link} from "react-router-dom";
 import '../App.css';
 import cardapio from "../Assests/cardapio.png";
 
 function SecondPage() {
     return (
-        <section className="destaque-section">
+        <section className="destaque-section" id="destaque">
             <div className="content-section">
                 <ul className="Content-Destaque">
                                 {
@@ -24,10 +25,12 @@ function SecondPage() {
                                 
                 </ul>
             <div className="btn">
-                <button>
-                    <span><img src={cardapio} alt="cardapio icone" /></span>
-                    ver Cardapio
-                </button>
+                <Link to="/Cardapio">
+                    <button>
+                        <span><img src={cardapio} alt="cardapio icone" /></span>
+                        ver Cardapio
+                    </button>
+                </Link>  
             </div>
             </div>
         </section>
